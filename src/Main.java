@@ -27,7 +27,7 @@ public class Main {
                 .map(Person::getFamily)
                 .collect(Collectors.toList());
 
-//        System.out.println(recruit);  // писал для проверки с небольшим населением в 100
+//        System.out.println(recruit);  // для проверки с небольшим населением в 100
 
         List<Person> workers = persons.stream()
                 .filter(x -> x.getAge() > 17)
@@ -37,11 +37,11 @@ public class Main {
                 .sorted(Comparator.comparing(Person::getFamily))
                 .collect(Collectors.toList());
 
-//        for (Person worker : workers) {   // писал для проверки с небольшим населением в 100
+//        for (Person worker : workers) {   // для проверки с небольшим населением в 100
 //            System.out.println(worker);
 //        }
 
-//        for (Person person : persons) {   // написал для проверки работы фильтов
+//        for (Person person : persons) {   // для проверки работы фильтов
 //            System.out.println(person);
 //        }
     }
